@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: solid 0.5px;
+  border-radius: 4px;
+  color: black;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+button:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 20px;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s;
+  opacity: 0;
+}
+#formTitle {
+  padding-bottom: 50px;
+}
+th:first-child {
+  opacity: 0.5;
+}
+tr td:first-child {
+  opacity: 0.5;
+}
+tr td:nth-child(n+5):not(:last-child) {
+    opacity: 0.5;
+  }
+#edirotNameBox {
+  height: 40px;
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+#edirotNameBox div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#edirotNameBox div input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 0.5px #ccc;
+  margin-top: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#description {
+  height: 100px;
+  border-radius: 5px;
+}
+#buttonBox {
+    width: 100%;
+    position: relative; 
+}
+
+#buttonBox div{
+    margin-top: 10px;
+    position: absolute;
+    right: 0; /* Position the item 0px from the left edge of the nearest positioned ancestor */
+}
+#buttonBox a{
+    margin-right: 15px;
+    padding: 10px 20px;
+    border: solid 0.5px;
+    border-radius: 4px;
+    color: black;
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+#title{
+    border-radius: 5px;
+    border: solid 1px ;
+}
+#category{
+    border-radius: 5px;
+    border: solid 1px 
+}

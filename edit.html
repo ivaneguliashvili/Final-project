@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Edit News</h1>
+        <form id="newsForm">
+            <input type="hidden" id="newsId" name="newsId">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="Category 1">Category 1</option>
+                <option value="Category 2">Category 2</option>
+                <option value="Category 3">Category 3</option>
+            </select>
+            <div id="edirotNameBox">
+                <div>
+                  <label for="editorFirstName">Editor First Name:</label>
+                  <input
+                    type="text"
+                    id="editorFirstName"
+                    name="editorFirstName"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="editorLastName">Editor Last Name:</label>
+                  <input
+                    type="text"
+                    id="editorLastName"
+                    name="editorLastName"
+                    required
+                  />
+                </div>
+              </div>
+              <div id="buttonBox">
+                <div>
+                    <a href="index.html"> Cancel </a>
+                    <button>Save</button>
+                </div>
+              </div>
+              <button type="button" id="updateButton" style="display: none">
+                Update
+              </button>
+            </form>
+          </div>
+        </form>
+    </div>
+    <script src="edit.js"></script>
+</body>
+</html>
